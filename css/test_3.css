@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+body{
+    background: url('../img/test_bg.png') no-repeat;
+    background-position: top;
+    background-size: cover;
+    width: 100%;
+}
+
+/* 헤더영역 */
+header{
+    width: 90%;
+    padding: 50px 20px 40px 20px;
+    position: relative;
+}
+header i.fa-times, header i.fa-arrow-left{
+    font-size: 24px;
+    position: absolute; top: 40px;
+}
+header i.fa-times{right: 30px;}
+header i.fa-arrow-left{left: 30px;}
+
+/* 메인콘텐츠 */
+.test{
+    width: 100%;
+    margin-bottom: 50px;
+    padding-bottom: 60px;
+}
+.h_test{
+    width: 60%;
+    margin: 0px auto;
+    margin-bottom: 20px;
+}
+.h_test img{width: 100%;}
+.m_test{
+    width: 342px; height: 584px;
+    margin: 0px auto;
+    background: #FFF9F5;
+    padding: 50px 20px 0px 20px; box-sizing: border-box;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.4); 
+}
+.m_test > h2{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+/* 메인 : 그리드 */
+.m_test > ul{
+    margin: 0px auto;
+    display: grid;
+    grid-template-rows: 106px 106px 106px;
+    grid-row-gap: 20px;
+}
+.m_test > ul > li {
+    border: 1px solid #CCBFA9;
+    padding: 30px 20px; box-sizing: border-box;
+    background: #fff;
+    position: relative;
+}
+.m_test > ul > li a{
+    font-size: 14px;
+    line-height: 24px;
+    color: #CCBFA9;
+}
+.m_test > ul > li span{
+    position: absolute;
+    top: 10px; right: 10px;
+    display: none;
+}
+.m_test > ul > li span img{width: 40px;}
+.m_test_info{font-size: 12px;}
+
+/* 그리드 내 항목이 선택됬을 경우 */
+.m_test > ul > li:hover{border: 2px solid #675F51;}
+.m_test > ul > li:hover a{color: #675F51; font-weight: bolder;}
+.m_test > ul > li:hover span{display: block;}

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCAFE_main</title>
+    <!-- 즐겨찾기 추가시 생성되는 파비콘 삽입 -->
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <!-- 초기화 -->
+    <link rel="stylesheet" href="./css/reset.css" type="text/css">
+    <!--공통 서식 -->
+    <link rel="stylesheet" href="./css/base.css" type="text/css">
+    <!-- 레이아웃 -->
+    <link rel="stylesheet" href="./css/main.css" type="text/css">
+   <!-- 폰트어썸 아이콘을 사용하기 위한 링크 주소 -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <script src="./script/jquery-3.6.0.js"></script>
+</head>
+<body>
+    <input type="checkbox" id="toggle">
+    <!-- 헤더 영역 -->
+    <header>
+        <h1><a href="index.html" title="메인페이지로 바로가기">
+            U : CAFE</a>
+        </h1>
+        <div class="h_icon">
+        <label for="toggle" class="fas fa-bars"></label>
+        <a href="o_bell.html"><i class="fa-solid fa-bell"></i></a>
+        <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+    </div>
+    <!-- nav : gnb -->
+    <nav class="gnb">
+    <i class="fa-solid fa-barcode"></i>
+    <label for="toggle" class="fas fa-times"></label>
+    <!-- gnb : 로그인 -->
+    <div class="log_in">
+        <h2><a href="login.html">
+            <i class="fa-solid fa-user"></i> &nbsp;로그인하기   
+        </a></h2>
+        <ul>
+            <li><a href="stamp.html">
+                0<br>스탬프
+            </a></li>
+            <li><a href="coupon.html">
+                0<br>쿠폰
+            </a></li>
+        </ul>
+    </div>
+    <!-- gnb : 메뉴 -->
+    <ul class="gnb_list">
+        <li><a href="order.html" title="주문하기">주문하기</a></li>
+        <li><a href="test.html" title="내 커피 취향 테스트">내 커피 취향 테스트</a></li>
+        <li><a href="curation.html" title="오늘의 추천 메뉴">오늘의 추천 메뉴</a></li>
+        <li><a href="membership.html" title="주문 내역">주문 내역</a></li>
+        <li><a href="info.html" title="게시판">게시판</a></li>
+        <li><a href="event.html" title="이벤트">이벤트</a></li>
+    </ul>
+
+
+    </nav>
+    </header>
+
+    <!-- 메인콘텐츠 -->
+    <main>
+        <!-- slide -->
+        <article id="slide">
+            <h2>slide</h2>
+            <ul>
+                <li>
+                    <img src="./img/s_01.png" alt="배너01">
+                    <div class="s_btn">
+                        <a href="test.html" title="내 취향 커피 테스트">
+                        <img src="./img/s1_btn2.png" alt="button"></a>
+                    </div>
+            </li>
+                <li>
+                    <img src="./img/s_02.png" alt="배너02">
+                    <div class="s_btn">
+                        <a href="info.html" title="카페 및 메뉴 정보">
+                        <img src="./img/s2_btn2.png" alt="button"></a>
+                    </div>    
+                </li>
+                <li>
+                    <img src="./img/s_03.png" alt="배너03">
+                    <div class="s_btn">
+                        <a href="curation.html" title="오늘의 추천메뉴">
+                        <img src="./img/s2_btn2.png" alt="button"></a>
+                    </div>    
+                    </li>
+            </ul>
+        </article>
+        <!-- 카페 검색 탭 -->
+        <article id="tab_con">
+            <h2>main_tab</h2>
+            <input type="radio" id="tab01" name="a" checked>
+            <label for="tab01">거리순</label>
+
+            <input type="radio" id="tab02" name="a">
+            <label for="tab02">인기순</label>
+            <!-- 거리순 -->
+            <ul class="d_list">
+                <li class="title">내 주변 카페</li>
+                <li><span><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;90m</span>
+                    카페 에프엑스</li>
+                <li><span><i class="fa-solid fa-location-dot"></i> 180m</span>
+                    스타벅스 백석중앙로점</li>
+                <li><span><i class="fa-solid fa-location-dot"></i> 180m</span>
+                    머그</li>
+                <li><span><i class="fa-solid fa-location-dot"></i> 190m</span>
+                    coffee allie</li>
+            <!-- 주문 btn -->
+            <li class="btn">
+                <a href="order.html" title="order_btn">
+                <img src="./img/m_order.png" alt="주문하기버튼">
+                </a>
+            </li>
+            </ul>
+
+            <!-- 인기순 -->
+            <ul class="b_list">
+                <li class="title">내 주변 카페</li>
+                <li><span><i class="fa-solid fa-location-dot"></i> 278m</span>
+                    스타벅스 백석중앙로점</li>
+                <li><span><i class="fa-solid fa-location-dot"></i> 399m</span>
+                    타르타르 일산백석점</li>
+                <li><span><i class="fa-solid fa-location-dot"></i> 562m</span>
+                    컴피</li>
+                <li><span><i class="fa-solid fa-location-dot"></i> 562m</span>
+                    37.5 일산백석점</li>
+            <!-- 주문 btn -->
+            <li class="btn">
+                <a href="order.html" title="order_btn">
+                <img src="./img/m_order.png" alt="주문하기버튼">
+                </a>
+            </li>
+            </ul>   
+        </article>
+        <!-- 가로 배치 아이콘 -->
+        <article id="col_con">
+            <h2>main_icon</h2>
+            <ul>
+                <li><a href="pre.html" title="이전 주문 내역">
+                    <img src="./img/m_icon_list.png" alt="list"></a></li>
+                <li><a href="stamp.html" title="스탬프">
+                    <img src="./img/m_icon_stamp.png" alt="stamp"></a></li>
+                <li><a href="coupon.html" title="마이쿠폰">
+                    <img src="./img/m_icon_coupon.png" alt="coupon"></a></li>
+                <li><a href="commu.html" title="게시판">
+                    <img src="./img/m_icon_com.png" alt="community"></a></li>
+            </ul>
+        </article>
+        <!-- 광고 배너 -->
+        <article id="s_banner">
+            <h2>main_banner</h2>
+            <img src="./img/b1.png" alt="" id="banner">
+        
+            <i class="fas fa-angle-left" id="l_btn"></i>
+            <i class="fas fa-angle-right" id="r_btn"></i>
+            <span id="page">&nbsp;</span>
+        </article>
+    </main>
+
+    <!-- 푸터 영역 -->
+    <footer>
+        <!-- 푸터nav -->
+        <nav>
+            <ul>
+                <li><a href="setting.html" title="설정화면으로 이동">
+                    <img src="./img/f_setting.png" alt="setting"></a></li>
+                <li><a href="index.html" title="메인화면으로 이동">
+                    <img src="./img/f_logo.png" alt="main"></a></li>
+                <li><a href="user.html" title="내 회원 정보로 이동">
+                    <img src="./img/f_user.png" alt="user"></a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script>
+        // main slide
+        $(document).ready(function(){
+    
+           //  첫번째 목록의 앞에 마지막 목록을 배치
+            $('#slide > ul > li:last-child').insertBefore('#slide > ul > li:first-child');
+           //  왼쪽으로 이동하여 1번이미지가 가운데 오도록한다
+           $('#slide > ul').css('margin-left','-100%');
+    
+           function moveLeft(){
+               console.log(1);
+               $('#slide > ul').animate({'margin-left':'-200%'},500,function(){
+                   $('#slide > ul > li:first-child').insertAfter('#slide > ul > li:last-child');
+                   $('#slide > ul').css('margin-left','-100%');
+               });
+           }
+           let Timer = setInterval(moveLeft,3000)
+        });
+
+         // slide banner
+         let n = 1; //초기값
+        document.getElementById('page').innerHTML = n+'/3';
+        
+        //좌, 우측 방향버튼 글릭시 해당 숫자가 표시되개 하기
+        //변수 선언
+        const l_btn = document.getElementById('l_btn');
+        const r_btn = document.getElementById('r_btn');
+
+        l_btn.onclick = function(){
+            if(n==1){
+                n=3; 
+            }else{ 
+                n--;
+            }
+            document.getElementById('page').innerHTML=n+'/3';
+            document.getElementById('banner').src='./img/b'+n+'.png';
+        }
+        r_btn.onclick = function(){
+            if(n==3){ 
+                n=1; 
+            }else{ 
+                n++; 
+            }
+            document.getElementById('page').innerHTML=n+'/3'; //변수에 값을 대입하여 숫자가 변경되도록 한다
+            document.getElementById('banner').src='./img/b'+n+'.png';
+        }
+        //5초마다 페이지 번호를 증가시켜서 자동으로 이미지 변경되게 하기
+        let Timer = setInterval(function(){
+            if(n==3){ 
+                n=1; 
+            }else{ 
+                n++; 
+            }
+            document.getElementById('page').innerHTML=n+'/3'; //변수에 값을 대입하여 숫자가 변경되도록 한다
+            document.getElementById('banner').src='./img/b'+n+'.png';
+        },5000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+main{margin-bottom: 30px;}
+/* 헤더영역 */
+header{
+    width: 90%;
+    padding: 50px 20px 30px 20px;
+    position: relative;
+}
+header > h1{
+    font-size: 20px;
+    font-weight: bolder;
+    color: #A0937D;
+    text-align: center;
+}
+header i.fa-arrow-left{
+    font-size: 24px;
+    position: absolute; top: 40px; left: 30px;
+    opacity: 70%;
+}
+
+/* 메인콘텐츠 */
+main{padding-bottom: 60px;}
+.order_txt{
+    width: 342px; height: 682px;
+    margin: 0px auto;
+    background: #FFF9F5;
+    padding: 40px 20px; box-sizing: border-box;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.4); 
+}
+.order_txt > h2{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+.order_txt > ul > li{
+    margin: 0px auto;
+    line-height: 28px;
+}
+.order_txt > ul > li span{
+    font-size: 14px;
+    font-weight: bolder;
+}
+.order_txt > ul > li:nth-child(4){
+    width: 302px;
+    margin: 20px 0px;
+
+}
+.order_txt > ul > li:nth-child(4) img{width: 100%;}
+
+/* 유의사항 및 버튼 */
+.b01, .b02{
+    padding: 10px 15px;
+    text-align: center;
+}
+.b01{background: #EAD4C9;}
+.b02{background: #4B4B4B; transform: translateY(10px);}
+.b02 a{
+    color: #fff;
+    font-size: 18px;
+}

@@ -1,0 +1,179 @@
+@charset "utf-8";
+
+/* 헤더 */
+header{
+    width: 100%; height: 60px;
+    background: #FFFAF0;
+    position: relative;
+}
+header > h1{
+    font-size: 20px;
+    font-weight: bolder;
+    color: #A0937D;
+    line-height: 60px;
+    text-align: center;
+}
+.fa-bars, .fa-bell, .fa-shopping-cart{
+    position: absolute; 
+    top: 20px;
+    font-size: 20px;
+    color: #675F51;
+}
+.fa-bars{left: 20px;}
+.fa-bell{right: 60px;}
+.fa-shopping-cart{right: 20px;}
+
+/* gnb nav */
+.gnb{
+    width: 100%; height: 100%;
+    position: fixed; top: 0px; left: -100%;
+    background: rgba(0,0,0,.8);
+    padding: 140px 4% 0px 4%;
+    box-sizing: border-box;
+    transition: 0.5s;
+    z-index: 1000;
+}
+i.fa-barcode, label.fa-times, .gnb_list > li a, .log_in h2 a{color: #FFF9F5;}
+i.fa-barcode, label.fa-times{
+    position: fixed; top: 20px; left: -100%;
+    font-size: 24px;
+    transition: 0.5s;
+}
+label.fa-times{right: 20px; font-size: 30px; width: 80px;}
+/* nav : login */
+.log_in{transform: translateY(-50px);}
+.log_in h2{text-align: center; margin-bottom: 20px;}
+.log_in h2 a{font-size: 16px;}
+.log_in > ul{
+    display: flex;
+    justify-content: space-around;
+    width: 90%; height: 74px;
+    margin: 0px auto;
+    background: #FFFAF0;
+    border-radius: 18px;
+    padding: 20px 0px; box-sizing: border-box;
+}
+.log_in > ul> li a{
+    display: block;
+    text-align: center;
+    line-height: 20px;
+}
+/* nav : list */
+.gnb_list{
+    padding: 0px 20px;
+    font-size: 14px;
+}
+.gnb_list > li{
+    line-height: 30px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255,250,240,0.4);
+}
+.gnb_list > li a{display: block;}
+/* 내비게이션 나오도록하기 */
+#toggle:checked + header .gnb{left: 0%;}
+#toggle:checked + header label.fa-times{left: 90%;}
+#toggle:checked + header i.fa-barcode{left: 5%;}
+
+/* 슬라이드 */
+#slide{
+    width: 100%; height: 434.66px;
+    overflow: hidden;
+}
+#slide > ul{
+    display: flex;
+    width: 300%;
+}
+#slide > ul > li{width: 100%; position: relative;}
+#slide img{width: 100%;}
+
+/* 슬라이드 버튼 */
+.s_btn{position: absolute; top: 180px; left: 40px; width: 155px;}
+.s_btn img{width: 100%;}
+
+ /* 탭콘텐츠 서식 */
+ input[type=radio]{display: none;}
+ #tab_con{
+     background-color: rgba(246,230,203,0.6);
+     width: 90%; height: 218px;
+     float: right;
+     transform: translateY(-200px);
+ }
+ #tab_con label{
+     display: inline-block;
+     width: 140px;
+     line-height: 30px;
+     padding-top: 5px;
+     text-align: center;
+     font-size: 11px;
+     color: #FFF9F5;
+ }
+ /* radio button 바로 뒤 동생 label */
+ input[type=radio]:checked + label{
+     border-bottom: 2px solid #675F51;
+     color: #675F51 !important;
+     font-weight: bold;
+ }
+ .d_list, .b_list{
+     display: none;
+     width: 78%;
+     background: #FFF9F5;
+     line-height: 30px;
+     padding: 30px 20px 15px 20px;
+     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+     border-bottom-right-radius: 10%;
+     border-bottom-left-radius: 10%;
+ }
+ .title{
+     font-size: 18px;
+     margin-left: 10px;
+     margin-bottom: 10px;
+ }
+ .d_list > li > span, .b_list > li > span{
+     color: #a0937d;
+     margin-right: 10px;
+ }
+ /* order button */
+ .btn{
+    text-align: center;
+    margin-top: 10px;
+ }
+
+ /* 각 탭메뉴 클릭시 해당 콘텐츠 나오도록 */
+ #tab01:checked ~ .d_list{display: block;}
+ #tab02:checked ~ .b_list{display: block;}
+
+/* 가로 배치 아이콘 */
+#col_con{
+    clear: both;
+    transform: translateY(-70px);
+}
+#col_con > ul{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0px auto;
+}
+#col_con > ul > li{height: 50px;}
+#col_con > ul > li img{height: 100%;}
+
+/* 광고 배너 */
+#s_banner{
+    width: 100%;
+    height: 144px;
+    position: relative;
+}
+#s_banner img{width: 100%;}
+#s_banner > i.fas{
+    position: absolute; top: -20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#s_banner > i.fa-angle-left{right: 84px;}
+#s_banner > i.fa-angle-right{right: 30px;}
+#page{
+    font-size: 14px;
+    position: absolute; top: -18px; right: 50px;
+}
+
+footer{margin-top: 50px;}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCAFE_order</title>
+    <!-- 즐겨찾기 추가시 생성되는 파비콘 삽입 -->
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <!-- 초기화 -->
+    <link rel="stylesheet" href="./css/reset.css" type="text/css">
+    <!--공통 서식 -->
+    <link rel="stylesheet" href="./css/base.css" type="text/css">
+    <!-- 레이아웃 -->
+    <link rel="stylesheet" href="./css/order_menu.css" type="text/css">
+    <!-- 옵션선택 -->
+    <script src="./script/check.js"></script>
+    <!-- 숫자 증감 -->
+    <script src="./script/number.js"></script>
+   <!-- 폰트어썸 아이콘을 사용하기 위한 링크 주소 -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- 헤더 영역 -->
+    <header>
+        <h1>주문하기</h1>
+        <div class="h_icon">
+        <a href="order.html"><i class="fa-solid fa-arrow-left"></i></a>
+        <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+    </div>
+    </header>
+    <!-- 메인콘텐츠 -->
+    <main>
+        <div class="order">
+            <div class="img">
+            <img src="./img/menu_img.png" alt="블론드 카페 아메리카노">
+        </div> 
+            <div class="check">
+                <h3>옵션선택</h3> 
+                <!-- 옵션1 -->
+                <div class="checkbox">
+                    <label>  
+                    <input type="checkbox" name="one" value="ice" onclick='checkOnlyOne(this)'/> 
+                    ICE
+                    <span class="checkmark"></span>
+                </label> 
+                    <label>
+                    <input type="checkbox" name="one" value="hot" onclick='checkOnlyOne(this)'/> 
+                    HOT
+                </label>
+            </div> 
+            <!-- 옵션2 -->
+            <div class="checkbox">
+                <label>  
+                <input type="checkbox" name="size" value="TALL" onclick='checkOneSize(this)'/> 
+                TALL
+            </label> 
+                <label>
+                <input type="checkbox" name="size" value="GRANDE" onclick='checkOneSize(this)'/> 
+                GRANDE
+            </label>
+                <label>
+                <input type="checkbox" name="size" value="VENTI" onclick='checkOneSize(this)'/> 
+                VENTI
+            </label>
+        </div>      
+            </div>
+            <!-- 주문 수량 증감 -->
+            <div class="number">
+            주문 수량
+            <div class="n_right">
+                <div id='result'>0</div>
+            <input type='button' onclick='count("minus")' value='-'/>
+            <input type='button' onclick='count("plus")' value='+'/>
+            </div>
+            </div>
+            <!-- 메뉴 추천 -->
+            <div class="recom">
+                <h4><img src="./img/recommend.png" alt="메뉴 추천"></h4>
+                <ul class="recom_img">
+                    <li><a href="#" title="메뉴 상세페이지로 이동"><img src="./img/r_01.png" alt="메뉴1"></a></li>
+                    <li><a href="#" title="메뉴 상세페이지로 이동"><img src="./img/r_02.png" alt="메뉴2"></a></li>
+                    <li><a href="#" title="메뉴 상세페이지로 이동"><img src="./img/r_03.png" alt="메뉴3"></a></li>
+                </ul>
+            </div>
+            <!-- 버튼 -->
+            <ul class="btn">
+                <li class="b01"><a href="cart.html" title="장바구니 담기">장바구니 담기</a></li>
+                <li class="b02"><a href="pay.html" title="바로 주문">바로 주문</a></li>
+            </ul>
+        </div>
+      </main>
+
+        <!-- 푸터 영역 -->
+        <footer>
+            <!-- 푸터nav -->
+            <nav>
+                <ul>
+                    <li><a href="setting.html" title="설정화면으로 이동">
+                        <img src="./img/f_setting.png" alt="setting"></a></li>
+                    <li><a href="index.html" title="메인화면으로 이동">
+                        <img src="./img/f_logo.png" alt="main"></a></li>
+                    <li><a href="user.html" title="내 회원 정보로 이동">
+                        <img src="./img/f_user.png" alt="user"></a></li>
+                </ul>
+            </nav>
+        </footer>
+</body>
+</html>

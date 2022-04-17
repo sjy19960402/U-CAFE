@@ -1,0 +1,102 @@
+@charset "utf-8";
+/* ios 기본 스타일 해제 */
+input{
+    appearance: none; 
+    -moz-appearance: none; 
+    -webkit-appearance: none; 
+    border-radius: 0; 
+    -webkit-border-radius: 0; 
+    -moz-border-radius: 0;
+}
+/* 헤더영역 */
+header{
+    width: 90%;
+    padding: 50px 20px 30px 20px;
+    position: relative;
+}
+header > h1{
+    font-size: 20px;
+    font-weight: bolder;
+    color: #A0937D;
+    text-align: center;
+}
+i.fa-arrow-left, i.fa-shopping-cart{
+    font-size: 24px;
+    position: absolute; top: 40px;
+    opacity: 70%;
+}
+i.fa-shopping-cart{right: 30px;}
+
+/* 메인콘텐츠 */
+.order{
+    width: 80%;
+    margin: 0px auto;
+    padding-bottom: 80px;
+}
+.img{
+    width: 146px; margin: 0px auto;
+    margin-top: 10px;
+}
+.img img{width: 100%;}
+
+/* 선택사항 속성 */
+.check{
+    margin-top: 20px;
+    line-height: 30px;
+}
+.check h3{font-size: 16px; margin-bottom: 5px;}
+.check label{margin-right: 12px;}
+
+/* 체크박스 속성 */
+input[type="checkbox"] {
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    border: 2px solid #675F51;
+    appearance: none;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  input[type="checkbox"]:checked {
+    background: #675F51;
+  }
+
+/* 주문 수량 */
+.number{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-top: 1px solid #675F51;
+    border-bottom: 1px solid #675F51;
+    padding: 24px;
+    font-size: 14px;
+    position: relative;
+}
+.n_right{float: right;}
+#result{transform: translate(-30px,2px);}
+.n_right > input{transform: translateY(-15px);}
+
+/* 메뉴 추천 */
+.recom{width: 100%;}
+.recom > h4{width: 70px;}
+.recom > h4 img{width: 100%;}
+.recom_img{
+    display: flex; justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.recom_img > li{height: 98px;}
+.recom_img > li img{height: 100%;}
+
+
+
+/* 버튼 */
+.btn{display: flex; justify-content: space-around;}
+.b01, .b02{
+    width: 140px; height: 44px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 44px;
+}
+.b01{background: #EAD4C9;}
+.b02{background: #4B4B4B;}
+.b02 a{color: #fff;}

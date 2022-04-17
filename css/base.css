@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* 기본서식 */
+@font-face {
+  font-family:"210 옴니고딕OTF";
+  src: local('210 옴니고딕');  /* System font */
+  src: local('210 옴니고딕');  /* IE 8 버전 이하 */
+  src: local('※'), /* else ... */
+         url('../fonts/210-옴니고딕-030.woff') format('woff'),  
+         url('../fonts/210\ 옴니고딕\ 030.ttf') format('truetype'),
+         url('../fonts/210\ 옴니고딕OTF\ 030.otf') format('otf');
+  font-style: normal;
+}
+header, main, footer{overflow: hidden;}
+body{
+    font-family: '210 옴니고딕OTF', 'noto-sans',sans-serif;
+    font-size:12px;
+    color:#4B4B4B;
+  }
+  
+  a{
+    color:#333;
+    text-decoration:none;
+  }
+  article > h2, #toggle{display: none;}
+
+ /* 푸터 고정 네비게이션 */
+ footer > nav{
+   position: fixed;
+   bottom: 0px;
+   width: 100%; height: 50px;
+   background-color: #EAD4C9;
+ }
+ footer > nav > ul{
+   display: flex;
+   width: 320px;
+   margin: 0px auto;
+   transform: translateY(7px);
+   justify-content: space-around;
+  }
+  footer > nav > ul > li{height: 40px;}
+  footer > nav > ul > li img{height: 100%;}
+
+
+
+
+  

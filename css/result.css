@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+/* 헤더영역 */
+header{
+    width: 90%;
+    padding: 50px 20px 40px 20px;
+    position: relative;
+}
+header i.fa-times, header i.fa-arrow-left{
+    font-size: 24px;
+    position: absolute; top: 40px;
+}
+header i.fa-times{right: 30px;}
+header i.fa-arrow-left{left: 20px;}
+
+/* 메인콘텐츠 */
+.con{
+    width: 100%;
+    margin-bottom: 50px;
+    padding-bottom: 60px;
+}
+.c_top{
+    width: 60%;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+.c_top img{width: 100%;}
+.c_txt{
+    width: 342px; height: 594px; 
+    margin: 0px auto;
+    background: #FFF9F5;
+    padding: 30px 20px; box-sizing: border-box;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.4); 
+}
+
+/* 메인 : 그리드 */
+.c_txt > ul{
+    margin: 0px auto;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-row-gap: 20px;
+}
+.c_txt > ul > li{
+    width: 90%; height: 98px;
+}
+.c_txt > ul > li img{height: 100%;}
+
+/* 주문버튼 */
+.c_txt > ul > li:last-child{
+    height: 43px; margin: 0px auto;
+    margin-top: 20px;
+}
+.c_txt > ul > li:last-child img{height: 100%;}
